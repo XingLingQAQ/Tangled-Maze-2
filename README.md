@@ -17,12 +17,8 @@ For downloads & more information:
 ## Development
 
 To be able to compile the plugin with the [LootChest](https://www.spigotmc.org/resources/lootchest.61564/) dependency, you need to install the LootChest jar file in your local maven repository.
-You can do this by running the following command in the directory where the LootChest.jar file is located:
+You can do this by running the following commands in the directory where the LootChest.jar file is located:
 ```shell
-mvn install:install-file -Dfile=<path/to/LootChest.jar> -DgroupId=fr.black_eyes.lootchest -DartifactId=LootChest -Dversion=2.4.0 -Dpackaging=jar
-```
-
-And - I have no slightest idea why - the library HoloEasy compiled inside LootChest.jar was not recognized until I ran:
-```shell
-mvn install:install-file -Dfile=<path/to/LootChest.jar> -DgroupId=org.holoeasy -DartifactId=holoeasy -Dversion=3.1.1 -Dpackaging=jar
+mvn install:install-file -Dfile=<path/to/lootchest.jar> -DgroupId=fr.black_eyes.lootchest -DartifactId=lootchest -Dversion=2.5.0 -Dpackaging=jar
+mvn install:install-file -Dfile=<path/to/lootchest.jar> -DgroupId=fr.black_eyes.lootchest -DartifactId=fall_effect -Dversion=2.5.0 -Dpackaging=jar
 ```
